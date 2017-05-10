@@ -20,4 +20,5 @@
     <string name="pronostico_futuro">5d/3h</string>
     <string name="error_empty">Provide city name.</string>
     <string name="error_number">Cant contain numbers or any other character.</string>
+    <string name="cargando">Loading...</string>
 </resources>

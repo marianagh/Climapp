@@ -96,6 +96,10 @@ public static class ViewHolder extends RecyclerView.ViewHolder implements View.O
 
     }
 
+    public void updateList(List<Ciudad> ciudades){
+        this.ciudades = ciudades;
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getItemCount() {
