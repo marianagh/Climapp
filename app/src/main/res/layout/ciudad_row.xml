@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dip"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="192dp">
+
+            <ImageView
+                android:id="@+id/ivClima"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/texto_imagen_clima"
+                app:srcCompat="@drawable/none_available" />
+
+            <TextView
+                android:id="@+id/txtTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtCiudad"
+                android:layout_alignStart="@+id/txtCiudad"
+                android:layout_below="@+id/txtCiudad"
+                android:text="@string/texto_no_disponible"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtCiudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/ivClima"
+                android:layout_toRightOf="@+id/ivClima"
+                android:text="@string/texto_no_disponible"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout3"
+                android:layout_alignStart="@+id/linearLayout3"
+                android:layout_below="@+id/txtTemperatura"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout4">
+
+                <TextView
+                    android:id="@+id/mainMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTemperatura"
+                    android:layout_toLeftOf="@+id/btnPronostico"
+                    android:layout_toStartOf="@+id/btnPronostico"
+                    android:layout_weight="1"
+                    android:text="@string/max" />
+
+                <TextView
+                    android:id="@+id/mainMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTemperatura"
+                    android:layout_alignStart="@+id/txtTemperatura"
+                    android:layout_below="@+id/txtTemperatura"
+                    android:layout_weight="1"
+                    android:text="@string/min" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_alignLeft="@+id/txtTemperatura"
+                android:layout_alignStart="@+id/txtTemperatura">
+
+                <TextView
+                    android:id="@+id/mainAmanecer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mainSunset"
+                    android:layout_alignStart="@+id/mainSunset"
+                    android:layout_below="@+id/mainSunset"
+                    android:layout_weight="1"
+                    android:text="@string/amanecer" />
+
+                <TextView
+                    android:id="@+id/mainSunset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mainMax"
+                    android:layout_alignStart="@+id/mainMax"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:text="@string/puesta_sol" />
+
+                <TextView
+                    android:id="@+id/mainWind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mainAmanecer"
+                    android:layout_alignStart="@+id/mainAmanecer"
+                    android:layout_below="@+id/mainAmanecer"
+                    android:layout_weight="1"
+                    android:text="@string/viento" />
+
+                <TextView
+                    android:id="@+id/mainHumedad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mainWind"
+                    android:layout_alignStart="@+id/mainWind"
+                    android:layout_below="@+id/mainWind"
+                    android:layout_weight="1"
+                    android:text="@string/humedad" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

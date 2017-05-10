@@ -1,0 +1,23 @@
+<resources>
+    <string name="api_key">85fac10fd20557a500d7c473e007d003</string>
+    <string name="app_name">Clima</string>
+    <string name="info">Información al día</string>
+    <string name="min">MIN</string>
+    <string name="max">MAX</string>
+    <string name="pronostico">Pronostico</string>
+    <string name="humedad">Humedad</string>
+    <string name="viento">Viento</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="texto_guardado">Guardado!</string>
+    <string name="texto_guardar">Guardar</string>
+    <string name="texto_imagen_clima">Imagen del clima</string>
+    <string name="texto_error">Ha ocurrido un error. :(</string>
+    <string name="texto_ver_pronostico">Ver</string>
+    <string name="texto_no_disponible">No disponible.</string>
+    <string name="amanecer">Amanecer</string>
+    <string name="puesta_sol">Puesta de sol</string>
+    <string name="grados">℃</string>
+    <string name="pronostico_futuro">5d/3h</string>
+    <string name="error_empty">Nombre de la ciudad.</string>
+    <string name="error_number">No puede contener numeros o letras.</string>
+</resources>

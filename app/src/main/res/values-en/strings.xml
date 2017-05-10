@@ -1,0 +1,23 @@
+<resources>
+    <string name="api_key">85fac10fd20557a500d7c473e007d003</string>
+    <string name="app_name">Weather</string>
+    <string name="info">Daily info</string>
+    <string name="min">MIN</string>
+    <string name="max">MAX</string>
+    <string name="pronostico">Forecast</string>
+    <string name="humedad">Humidity</string>
+    <string name="viento">Wind</string>
+    <string name="ciudad">City</string>
+    <string name="texto_guardado">Saved</string>
+    <string name="texto_guardar">Save</string>
+    <string name="texto_imagen_clima">Forecast image description</string>
+    <string name="texto_error">An error has ocurred. :(</string>
+    <string name="texto_ver_pronostico">View</string>
+    <string name="texto_no_disponible">Unavailable.</string>
+    <string name="grados">℃</string>
+    <string name="amanecer">Sunrise</string>
+    <string name="puesta_sol">Sunset</string>
+    <string name="pronostico_futuro">5d/3h</string>
+    <string name="error_empty">Provide city name.</string>
+    <string name="error_number">Cant contain numbers or any other character.</string>
+</resources>
